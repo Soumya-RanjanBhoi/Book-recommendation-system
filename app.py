@@ -8,9 +8,10 @@ st.set_page_config(page_title="Book Recommender", layout="wide")
 
 
 popular_df = pickle.load(open("popular_df.pkl", "rb"))
-books = pickle.load(open("books.pkl", "rb"))
+
 sim_score = pickle.load(open("sim_score_.pkl", "rb"))
 pivot_tb = pickle.load(open("pivot_table.pkl", "rb"))
+books = pickle.load(open("books.pkl", "rb"))
 
 if "temp_page" in st.session_state:
     st.session_state.page = st.session_state.temp_page
